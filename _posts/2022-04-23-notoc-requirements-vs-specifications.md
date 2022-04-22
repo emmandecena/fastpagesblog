@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 description: A comparison between the concepts of software requirements versus specifications
 categories: [software engineering]
