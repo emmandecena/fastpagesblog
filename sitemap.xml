@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://emmandecena.github.io/fastpagesblog/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://emmandecena.github.io/fastpagesblog/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/22/requirements-vs-specifications.html</loc>
 <lastmod>2022-04-22T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html</loc>
+<lastmod>2022-04-23T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://emmandecena.github.io/fastpagesblog/about/</loc>
@@ -23,5 +19,8 @@
 </url>
 <url>
 <loc>https://emmandecena.github.io/fastpagesblog/categories/</loc>
+</url>
+<url>
+<loc>https://emmandecena.github.io/fastpagesblog/template-markdown-post.html</loc>
 </url>
 </urlset>
