@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/22/requirements-vs-specifications.html</loc>
-<lastmod>2022-04-22T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html</loc>
 <lastmod>2022-04-23T00:00:00-05:00</lastmod>
 </url>
@@ -21,6 +17,6 @@
 <loc>https://emmandecena.github.io/fastpagesblog/categories/</loc>
 </url>
 <url>
-<loc>https://emmandecena.github.io/fastpagesblog/template-markdown-post.html</loc>
+<loc>https://emmandecena.github.io/fastpagesblog/post_template_files/template-markdown-post.html</loc>
 </url>
 </urlset>
