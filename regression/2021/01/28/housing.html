@@ -8,21 +8,21 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="California Housing Prices" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Data Scientist / Writer. My blog about code and ideas." />
-<meta property="og:description" content="Data Scientist / Writer. My blog about code and ideas." />
-<link rel="canonical" href="https://emmandecena.github.io/fastpagesblog/2020/01/28/housing.html" />
-<meta property="og:url" content="https://emmandecena.github.io/fastpagesblog/2020/01/28/housing.html" />
+<meta name="description" content="Demonstration of regression technique" />
+<meta property="og:description" content="Demonstration of regression technique" />
+<link rel="canonical" href="https://ecdecena.com/blog/regression/2021/01/28/housing.html" />
+<meta property="og:url" content="https://ecdecena.com/blog/regression/2021/01/28/housing.html" />
 <meta property="og:site_name" content="E. Decena" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-28T00:00:00-06:00" />
+<meta property="article:published_time" content="2021-01-28T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="California Housing Prices" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-01-28T00:00:00-06:00","datePublished":"2020-01-28T00:00:00-06:00","description":"Data Scientist / Writer. My blog about code and ideas.","headline":"California Housing Prices","mainEntityOfPage":{"@type":"WebPage","@id":"https://emmandecena.github.io/fastpagesblog/2020/01/28/housing.html"},"url":"https://emmandecena.github.io/fastpagesblog/2020/01/28/housing.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-01-28T00:00:00-06:00","datePublished":"2021-01-28T00:00:00-06:00","description":"Demonstration of regression technique","headline":"California Housing Prices","mainEntityOfPage":{"@type":"WebPage","@id":"https://ecdecena.com/blog/regression/2021/01/28/housing.html"},"url":"https://ecdecena.com/blog/regression/2021/01/28/housing.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/fastpagesblog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://emmandecena.github.io/fastpagesblog/feed.xml" title="E. Decena" />
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ecdecena.com/blog/feed.xml" title="E. Decena" />
 
-<link rel="shortcut icon" type="image/x-icon" href="/fastpagesblog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 <script>
@@ -57,7 +57,7 @@ window.onload = wrap_img;
 </head>
 <body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/fastpagesblog/">E. Decena</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">E. Decena</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/fastpagesblog/about/">About Me</a><a class="page-link" href="/fastpagesblog/search/">Search</a><a class="page-link" href="/fastpagesblog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -75,8 +75,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">California Housing Prices</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-01-28T00:00:00-06:00" itemprop="datePublished">
-        Jan 28, 2020
+    <h1 class="post-title p-name" itemprop="name headline">California Housing Prices</h1><p class="page-description">Demonstration of regression technique</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-28T00:00:00-06:00" itemprop="datePublished">
+        Jan 28, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -92,25 +92,25 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-justify-center">
           <div class="px-2">
 
-    <a href="https://github.com/emmandecena/fastpagesblog/tree/master/_notebooks/2020-01-28-housing.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/fastpagesblog/assets/badges/github.svg" alt="View On GitHub">
+    <a href="https://github.com/emmandecena/fastpagesblog/tree/master/_notebooks/2021-01-28-housing.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/emmandecena/fastpagesblog/master?filepath=_notebooks%2F2020-01-28-housing.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/binder.svg" alt="Open In Binder"/>
+    <a href="https://mybinder.org/v2/gh/emmandecena/fastpagesblog/master?filepath=_notebooks%2F2021-01-28-housing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/emmandecena/fastpagesblog/blob/master/_notebooks/2020-01-28-housing.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/colab.svg" alt="Open In Colab"/>
+    <a href="https://colab.research.google.com/github/emmandecena/fastpagesblog/blob/master/_notebooks/2021-01-28-housing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
           <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Femmandecena%2Ffastpagesblog%2Fblob%2Fmaster%2F_notebooks%2F2020-01-28-housing.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Femmandecena%2Ffastpagesblog%2Fblob%2Fmaster%2F_notebooks%2F2021-01-28-housing.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/blog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
   </a>
 </div>
 
@@ -122,30 +122,11 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2020-01-28-housing.ipynb
+# file to edit: _notebooks/2021-01-28-housing.ipynb
 -->
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&quot;Title&quot;">"Title"<a class="anchor-link" href="#&quot;Title&quot;"> </a></h1><blockquote><p>"Awesome summary"</p>
-</blockquote>
-<ul>
-<li>toc:false- use_plotly: true</li>
-<li>badges: true</li>
-<li>comments: true</li>
-<li>categories: [fastpages, jupyter]</li>
-<li>image: images/some_folder/your_image.png</li>
-<li>hide: false</li>
-<li>search_exclude: true</li>
-<li>metadata_key1: metadata_value1</li>
-<li>metadata_key2: metadata_value2</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -491,241 +472,33 @@ Name: ocean_proximity, dtype: int64</pre>
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
-<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;iframe&quot;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">tips</span><span class="p">()</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="n">facet_row</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">facet_col</span><span class="o">=</span><span class="s2">&quot;day&quot;</span><span class="p">,</span>
-       <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;day&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Thur&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">,</span> <span class="s2">&quot;Sat&quot;</span><span class="p">,</span> <span class="s2">&quot;Sun&quot;</span><span class="p">],</span> <span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Lunch&quot;</span><span class="p">,</span> <span class="s2">&quot;Dinner&quot;</span><span class="p">]})</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_7.html" frameborder="0" allowfullscreen=""></iframe>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-
-<span class="n">gapminder</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">gapminder</span><span class="p">()</span>
-<span class="n">gapminder</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>country</th>
-      <th>continent</th>
-      <th>year</th>
-      <th>lifeExp</th>
-      <th>pop</th>
-      <th>gdpPercap</th>
-      <th>iso_alpha</th>
-      <th>iso_num</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1952</td>
-      <td>28.801</td>
-      <td>8425333</td>
-      <td>779.445314</td>
-      <td>AFG</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1957</td>
-      <td>30.332</td>
-      <td>9240934</td>
-      <td>820.853030</td>
-      <td>AFG</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1962</td>
-      <td>31.997</td>
-      <td>10267083</td>
-      <td>853.100710</td>
-      <td>AFG</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1967</td>
-      <td>34.020</td>
-      <td>11537966</td>
-      <td>836.197138</td>
-      <td>AFG</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1972</td>
-      <td>36.088</td>
-      <td>13079460</td>
-      <td>739.981106</td>
-      <td>AFG</td>
-      <td>4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span>
-    <span class="n">gapminder</span><span class="p">,</span>
-    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;continent&quot;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lifeExp&quot;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;continent&quot;</span><span class="p">,</span>
-    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;lifeExp&quot;</span><span class="p">:</span> <span class="s2">&quot;life expectancy at birth&quot;</span><span class="p">},</span>
-<span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_9.html" frameborder="0" allowfullscreen=""></iframe>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 </div>
 
 
 
-  </div><a class="u-url" href="/fastpagesblog/2020/01/28/housing.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="emmandecena/fastpagesblog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/regression/2021/01/28/housing.html" hidden></a>
 </article>
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/fastpagesblog/"></data>
+  <data class="u-url" href="/blog/"></data>
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/fastpagesblog/feed.xml">
+          <a href="/blog/feed.xml">
             <svg class="svg-icon orange">
-              <use xlink:href="/fastpagesblog/assets/minima-social-icons.svg#rss"></use>
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
           </a>
         </p>

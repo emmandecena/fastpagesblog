@@ -4,7 +4,7 @@
         "post0": {
             "title": "Software Engineering | Requirements Versus Specifications",
             "content": "Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . This is a quotation . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . . Why do we need requirements? . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . How to achieve requirements . Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .",
-            "url": "https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
+            "url": "https://ecdecena.com/blog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
             "relUrl": "/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
             "date": " • Apr 23, 2022"
         }
@@ -15,7 +15,7 @@
         ,"post1": {
             "title": "What is Machine Learning?",
             "content": "Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . This is a quotation . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . . Why do we need requirements? . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . How to achieve requirements . Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .",
-            "url": "https://emmandecena.github.io/fastpagesblog/machine%20learning/2022/04/20/what-is-machine-learning.html",
+            "url": "https://ecdecena.com/blog/machine%20learning/2022/04/20/what-is-machine-learning.html",
             "relUrl": "/machine%20learning/2022/04/20/what-is-machine-learning.html",
             "date": " • Apr 20, 2022"
         }
@@ -24,13 +24,15 @@
   
     
         ,"post2": {
-            "title": "California Housing Prices",
-            "content": "&quot;Title&quot; . &quot;Awesome summary&quot; . toc:false- use_plotly: true | badges: true | comments: true | categories: [fastpages, jupyter] | image: images/some_folder/your_image.png | hide: false | search_exclude: true | metadata_key1: metadata_value1 | metadata_key2: metadata_value2 | . import pandas as pd import numpy as np . housing = pd.read_csv(&quot;/Users/emmanueldecena/Data/projects/data/housing.csv&quot;) housing . longitude latitude housing_median_age total_rooms total_bedrooms population households median_income median_house_value ocean_proximity . 0 -122.23 | 37.88 | 41.0 | 880.0 | 129.0 | 322.0 | 126.0 | 8.3252 | 452600.0 | NEAR BAY | . 1 -122.22 | 37.86 | 21.0 | 7099.0 | 1106.0 | 2401.0 | 1138.0 | 8.3014 | 358500.0 | NEAR BAY | . 2 -122.24 | 37.85 | 52.0 | 1467.0 | 190.0 | 496.0 | 177.0 | 7.2574 | 352100.0 | NEAR BAY | . 3 -122.25 | 37.85 | 52.0 | 1274.0 | 235.0 | 558.0 | 219.0 | 5.6431 | 341300.0 | NEAR BAY | . 4 -122.25 | 37.85 | 52.0 | 1627.0 | 280.0 | 565.0 | 259.0 | 3.8462 | 342200.0 | NEAR BAY | . ... ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | . 20635 -121.09 | 39.48 | 25.0 | 1665.0 | 374.0 | 845.0 | 330.0 | 1.5603 | 78100.0 | INLAND | . 20636 -121.21 | 39.49 | 18.0 | 697.0 | 150.0 | 356.0 | 114.0 | 2.5568 | 77100.0 | INLAND | . 20637 -121.22 | 39.43 | 17.0 | 2254.0 | 485.0 | 1007.0 | 433.0 | 1.7000 | 92300.0 | INLAND | . 20638 -121.32 | 39.43 | 18.0 | 1860.0 | 409.0 | 741.0 | 349.0 | 1.8672 | 84700.0 | INLAND | . 20639 -121.24 | 39.37 | 16.0 | 2785.0 | 616.0 | 1387.0 | 530.0 | 2.3886 | 89400.0 | INLAND | . 20640 rows × 10 columns . housing.isna().sum() . longitude 0 latitude 0 housing_median_age 0 total_rooms 0 total_bedrooms 207 population 0 households 0 median_income 0 median_house_value 0 ocean_proximity 0 dtype: int64 . housing.ocean_proximity.value_counts() . &lt;1H OCEAN 9136 INLAND 6551 NEAR OCEAN 2658 NEAR BAY 2290 ISLAND 5 Name: ocean_proximity, dtype: int64 . %matplotlib inline import matplotlib.pyplot as plt housing.hist(bins=50, figsize=(20,15)) plt.show() . import plotly.io as pio pio.renderers.default = &quot;iframe&quot; . import plotly.express as px df = px.data.tips() fig = px.histogram(df, x=&quot;total_bill&quot;, y=&quot;tip&quot;, color=&quot;sex&quot;, facet_row=&quot;time&quot;, facet_col=&quot;day&quot;, category_orders={&quot;day&quot;: [&quot;Thur&quot;, &quot;Fri&quot;, &quot;Sat&quot;, &quot;Sun&quot;], &quot;time&quot;: [&quot;Lunch&quot;, &quot;Dinner&quot;]}) fig.show() . import plotly.express as px gapminder = px.data.gapminder() gapminder.head() . country continent year lifeExp pop gdpPercap iso_alpha iso_num . 0 Afghanistan | Asia | 1952 | 28.801 | 8425333 | 779.445314 | AFG | 4 | . 1 Afghanistan | Asia | 1957 | 30.332 | 9240934 | 820.853030 | AFG | 4 | . 2 Afghanistan | Asia | 1962 | 31.997 | 10267083 | 853.100710 | AFG | 4 | . 3 Afghanistan | Asia | 1967 | 34.020 | 11537966 | 836.197138 | AFG | 4 | . 4 Afghanistan | Asia | 1972 | 36.088 | 13079460 | 739.981106 | AFG | 4 | . fig = px.violin( gapminder, x=&quot;continent&quot;, y=&quot;lifeExp&quot;, color=&quot;continent&quot;, labels={&quot;lifeExp&quot;: &quot;life expectancy at birth&quot;}, ) fig.update_layout(showlegend=False) .",
-            "url": "https://emmandecena.github.io/fastpagesblog/2020/01/28/housing.html",
-            "relUrl": "/2020/01/28/housing.html",
-            "date": " • Jan 28, 2020"
+            "title": "MNIST Classificaton",
+            "content": "from sklearn.datasets import fetch_openml . mnist = fetch_openml(&#39;mnist_784&#39;, version=1) mnist.keys() . X, y = mnist[&quot;data&quot;], mnist[&quot;target&quot;] X.shape y.shape . import matplotlib as mpl import matplotlib.pyplot as plt some_digit = X[0] some_digit_image = some_digit.reshape(28, 28) plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation=&quot;nearest&quot;) plt.axis(&quot;off&quot;) plt.show() .",
+            "url": "https://ecdecena.com/blog/classification/2021/05/02/digit-classification.html",
+            "relUrl": "/classification/2021/05/02/digit-classification.html",
+            "date": " • May 2, 2021"
         }
         
+    
+  
     
   
 
@@ -41,7 +43,7 @@
       ,"page1": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://emmandecena.github.io/fastpagesblog/about/",
+          "url": "https://ecdecena.com/blog/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -73,7 +75,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://emmandecena.github.io/fastpagesblog/robots.txt",
+          "url": "https://ecdecena.com/blog/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
