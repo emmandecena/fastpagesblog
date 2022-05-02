@@ -88,33 +88,6 @@ window.onload = wrap_img;
     
 
     
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
-
-    <a href="https://github.com/emmandecena/fastpagesblog/tree/master/_notebooks/2021-05-02-digit-classification.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/fastpagesblog/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/emmandecena/fastpagesblog/master?filepath=_notebooks%2F2021-05-02-digit-classification.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/emmandecena/fastpagesblog/blob/master/_notebooks/2021-05-02-digit-classification.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Femmandecena%2Ffastpagesblog%2Fblob%2Fmaster%2F_notebooks%2F2021-05-02-digit-classification.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/fastpagesblog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -127,6 +100,31 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -152,7 +150,6 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mnist</span> <span class="o">=</span> <span class="n">fetch_openml</span><span class="p">(</span><span class="s1">&#39;mnist_784&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">mnist</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -169,12 +166,60 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">],</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
-<span class="n">X</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">y</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mnist</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>dict_keys([&#39;data&#39;, &#39;target&#39;, &#39;frame&#39;, &#39;categories&#39;, &#39;feature_names&#39;, &#39;target_names&#39;, &#39;DESCR&#39;, &#39;details&#39;, &#39;url&#39;])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">],</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
+<span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>((70000, 784), (70000,))</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -190,11 +235,110 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">some_digit</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">some_digit_image</span> <span class="o">=</span> <span class="n">some_digit</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">some_digit</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">some_digit_image</span> <span class="o">=</span> <span class="n">some_digit</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">some_digit_image</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">binary</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;5&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
 </pre></div>
 
     </div>

@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "MNIST Classificaton",
-            "content": "from sklearn.datasets import fetch_openml . mnist = fetch_openml(&#39;mnist_784&#39;, version=1) mnist.keys() . X, y = mnist[&quot;data&quot;], mnist[&quot;target&quot;] X.shape y.shape . import matplotlib as mpl import matplotlib.pyplot as plt some_digit = X[0] some_digit_image = some_digit.reshape(28, 28) plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation=&quot;nearest&quot;) plt.axis(&quot;off&quot;) plt.show() .",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . import pandas as pd import numpy as np . from sklearn.datasets import fetch_openml . mnist = fetch_openml(&#39;mnist_784&#39;, version=1) . mnist.keys() . dict_keys([&#39;data&#39;, &#39;target&#39;, &#39;frame&#39;, &#39;categories&#39;, &#39;feature_names&#39;, &#39;target_names&#39;, &#39;DESCR&#39;, &#39;details&#39;, &#39;url&#39;]) . X, y = mnist[&quot;data&quot;], mnist[&quot;target&quot;] X.shape, y.shape . ((70000, 784), (70000,)) . import matplotlib as mpl import matplotlib.pyplot as plt . some_digit = X.loc[0].to_numpy() . some_digit_image = some_digit.reshape(28, 28) plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation=&quot;nearest&quot;) plt.axis(&quot;off&quot;) plt.show() . y[0] . &#39;5&#39; . y = y.astype(np.uint8) .",
             "url": "https://emmandecena.github.io/fastpagesblog/classification/2021/05/02/digit-classification.html",
             "relUrl": "/classification/2021/05/02/digit-classification.html",
             "date": " • May 2, 2021"
@@ -33,6 +33,15 @@
         
     
   
+    
+        ,"post3": {
+            "title": "California Housing Prices",
+            "content": "import pandas as pd import numpy as np . housing = pd.read_csv(&quot;/Users/emmanueldecena/Data/projects/data/housing.csv&quot;) . housing.isna().sum() . longitude 0 latitude 0 housing_median_age 0 total_rooms 0 total_bedrooms 207 population 0 households 0 median_income 0 median_house_value 0 ocean_proximity 0 dtype: int64 . housing.ocean_proximity.value_counts() . &lt;1H OCEAN 9136 INLAND 6551 NEAR OCEAN 2658 NEAR BAY 2290 ISLAND 5 Name: ocean_proximity, dtype: int64 . import seaborn as sns sns.set_theme() import matplotlib.pyplot as plt housing.hist(bins=50, figsize=(20,15)) plt.show() .",
+            "url": "https://emmandecena.github.io/fastpagesblog/regression/2021/01/28/housing.html",
+            "relUrl": "/regression/2021/01/28/housing.html",
+            "date": " • Jan 28, 2021"
+        }
+        
     
   
 
