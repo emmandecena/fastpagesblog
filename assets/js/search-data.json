@@ -4,7 +4,7 @@
         "post0": {
             "title": "Software Engineering | Requirements Versus Specifications",
             "content": "Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . This is a quotation . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . . Why do we need requirements? . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . How to achieve requirements . Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .",
-            "url": "https://ecdecena.com/blog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
+            "url": "https://emmandecena.github.io/fastpagesblog/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
             "relUrl": "/software%20engineering/2022/04/23/notoc-requirements-vs-specifications.html",
             "date": " • Apr 23, 2022"
         }
@@ -15,7 +15,7 @@
         ,"post1": {
             "title": "What is Machine Learning?",
             "content": "Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . This is a quotation . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . . Why do we need requirements? . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . How to achieve requirements . Introduction text lorem ipsum, hooks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .",
-            "url": "https://ecdecena.com/blog/machine%20learning/2022/04/20/what-is-machine-learning.html",
+            "url": "https://emmandecena.github.io/fastpagesblog/machine%20learning/2022/04/20/what-is-machine-learning.html",
             "relUrl": "/machine%20learning/2022/04/20/what-is-machine-learning.html",
             "date": " • Apr 20, 2022"
         }
@@ -26,7 +26,7 @@
         ,"post2": {
             "title": "MNIST Classificaton",
             "content": "from sklearn.datasets import fetch_openml . mnist = fetch_openml(&#39;mnist_784&#39;, version=1) mnist.keys() . X, y = mnist[&quot;data&quot;], mnist[&quot;target&quot;] X.shape y.shape . import matplotlib as mpl import matplotlib.pyplot as plt some_digit = X[0] some_digit_image = some_digit.reshape(28, 28) plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation=&quot;nearest&quot;) plt.axis(&quot;off&quot;) plt.show() .",
-            "url": "https://ecdecena.com/blog/classification/2021/05/02/digit-classification.html",
+            "url": "https://emmandecena.github.io/fastpagesblog/classification/2021/05/02/digit-classification.html",
             "relUrl": "/classification/2021/05/02/digit-classification.html",
             "date": " • May 2, 2021"
         }
@@ -43,7 +43,7 @@
       ,"page1": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://ecdecena.com/blog/about/",
+          "url": "https://emmandecena.github.io/fastpagesblog/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -75,7 +75,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://ecdecena.com/blog/robots.txt",
+          "url": "https://emmandecena.github.io/fastpagesblog/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }

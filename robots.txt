@@ -1,1 +1,1 @@
-Sitemap: https://ecdecena.com/blog/sitemap.xml
+Sitemap: https://emmandecena.github.io/fastpagesblog/sitemap.xml
